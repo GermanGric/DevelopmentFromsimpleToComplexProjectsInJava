@@ -5,8 +5,7 @@ public class Main {
         String name = "Дмитрий";
         String empty = " ";
 
-        boolean isEmpty = empty.length() == 0;
-        System.out.println(isEmpty);
+        System.out.println(empty.isEmpty());
 
     }
 }
