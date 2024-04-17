@@ -3,13 +3,10 @@
 public class Main {
     public static void main(String[] args) {
         String name = "Дмитрий";
-        String empty = " ";
-
-        System.out.println(empty.isEmpty());
-        System.out.println(empty.isBlank());
-
-        String blank = " \t \n  ";
-        System.out.println(blank.isBlank());
+        String surname = "Петров";
+        int age = 55;
+        String personInfo = name +" " + surname + " - " + age + " лет." ;
+        System.out.println(personInfo);
 
     }
 }
