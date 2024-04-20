@@ -10,6 +10,6 @@ public class Main {
         System.out.println("Input the third number");
         int num3 = input.nextInt();
         System.out.println();
-        System.out.println("the average value of the number: " + (num1+num2+num3)/3);
+        System.out.println("the average value of the number : " + (num1+num2+num3)/3);
     }
 }
