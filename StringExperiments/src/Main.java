@@ -4,9 +4,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Input the first number");
-        int n = input.nextInt();
-        for (int i = 0; i < 10; i++){
-            System.out.println(n + " * " + i + " = " + (n * i));
-        }
+        double r = input.nextDouble();
+        System.out.println();
+        System.out.println("Area = " + r * r * Math.PI);
+        System.out.println("Perimeter = " + 2 * r * Math.PI );
     }
 }
