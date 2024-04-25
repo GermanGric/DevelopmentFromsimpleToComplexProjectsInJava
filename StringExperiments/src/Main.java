@@ -1,7 +1,3 @@
-import java.util.Scanner;
-
-import java.util.*;
-import java.util.ArrayList;
 import java.lang.String;
 
 public class Main {
