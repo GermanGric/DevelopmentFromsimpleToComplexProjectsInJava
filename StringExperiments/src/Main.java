@@ -7,14 +7,27 @@ import java.lang.String;
 public class Main {
 
     public static void main(String[] args) {
-        int certCount = 1000;
-        int winnerRate = 100;
-        int[] certNumbers = new int[certCount];
-        boolean[] certIsWin = new boolean[certCount];
-        for (int i = 0; i < certNumbers.length; i++){
-            certNumbers[i] = 1_000_000 + (int) Math.round(8_999_999 * Math.random());
-            certIsWin[i] = i % winnerRate == 0;
-            System.out.println(certNumbers[i]);
+        Product[] products = {
+          new Product("молоко", 65),
+          new Product("meet", 420),
+          new Product("milk",65),
+          new Product("bread",40),
+          new Product("a carrot", 250),
+          new Product("chicken", 250),
+          new Product("melon",20),
+          new Product("mixer", 1200),
+          new Product("kettle", 1800)
+        };
+        int MIN_PRICE_FOR_DISCOUNT = 1000;
+        double discount = 0.1;
+        for (Product product : products){
+            int price = product.getPrice();
+            if (price >= MIN_PRICE_FOR_DISCOUNT){
+                product.setPrice((int) (price * (1 - discount)));
+            }
+        }
+        for (Product product : products){
+            System.out.println(product);
         }
     }
 }
