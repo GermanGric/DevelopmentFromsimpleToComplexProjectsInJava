@@ -7,17 +7,13 @@ import java.lang.String;
 public class Main {
 
     public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<String>();
-
-        list.add("abc@gmail.com");
-        list.add("xyz@gmail.com");
-        list.add("user@gmail.com");
-        list.add("mno@gmail.com");
-        list.add("random@gmail.com");
-
-        Spliterator<String> emails = list.spliterator();
-
-        System.out.println("List of Emails: ");
-        emails.forEachRemaining((n) -> System.out.println(n));
+        int certCount = 1000;
+        int[] certNumbers = new int[certCount];
+        for (int i = 0; i < certNumbers.length; i++){
+            certNumbers[i] = 1_000_000 + (int) Math.round(8_999_999 * Math.random());
+        }
+        for (int i = 0; i < certNumbers.length; i++){
+            System.out.println(certNumbers[i]);
+        }
     }
 }
